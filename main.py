@@ -208,7 +208,7 @@ for k in range(len(source)): # 낙상 for 문 30건
             # 낙상 프레임 저장
             if outvid:
                 writer.write(frame)
-                cv2.imwrite(video_path + "/" + str(f).zfill(4) + ".jpg", frame)
+                #cv2.imwrite(video_path + "/" + str(f).zfill(4) + ".jpg", frame)
 
             # 낙상 프레임 출력
             #cv2.imshow('frame', frame)

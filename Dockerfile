@@ -19,9 +19,10 @@ RUN pip install openpyxl
 RUN pip install matplotlib
 
 # Install Project
-RUN apt-get install git-lfs lfs
+RUN apt-get install git-lfs
 RUN git clone https://github.com/twoimo/FallDetetion_CSDC
 WORKDIR FallDetetion_CSDC
+RUN git lfs pull
 
 # Set the default command to run when the container starts
 CMD ["bash"]
